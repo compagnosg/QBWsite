@@ -1,0 +1,34 @@
+http://localhost:8000/QBWsite.html
+
+Avvio del server:
+
+Dovrai ripetere il passaggio di avvio del server Python ogni volta che vuoi lavorare sul tuo sito.
+Questo significa aprire il terminale, navigare alla cartella del tuo progetto, e eseguire il comando python -m http.server 8000 (o python -m SimpleHTTPServer 8000 per Python 2).
+
+
+Accesso al sito:
+
+Una volta che il server è in esecuzione, puoi semplicemente digitare http://localhost:8000 nella barra degli indirizzi del browser per accedere al tuo sito.
+Non è necessario reinstallare o riconfigurare nulla; basta avviare il server e usare l'URL.
+
+
+Sessioni di lavoro:
+
+Il server rimarrà attivo finché non lo chiudi (con Ctrl+C nel terminale) o finché non chiudi il terminale.
+Se chiudi il terminale o riavvii il computer, dovrai riavviare il server la prossima volta che vuoi lavorare sul sito.
+
+
+Modifiche ai file:
+
+Puoi modificare i tuoi file HTML, CSS, JavaScript e JSON mentre il server è in esecuzione.
+Dopo aver salvato le modifiche, basta ricaricare la pagina nel browser per vedere gli aggiornamenti.
+
+
+Comodità:
+
+Per rendere il processo più veloce, potresti creare uno script o un alias nel tuo sistema che avvia il server nella cartella giusta con un singolo comando.
+
+
+Alternativa per sviluppo continuo:
+
+Se trovi scomodo riavviare il server ogni volta, potresti considerare soluzioni più avanzate come Node.js con nodemon, che riavvia automaticamente il server quando rileva modifiche ai file.

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrati - Quantum Bet World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="auth-style.css">
+</head>
+<body>
+    <img src="Banner.jpg" alt="Banner" class="banner">
+    <nav>
+        <ul>
+            <li><a href="QBWsite.html" data-translate ="home">Home Page</a></li>
+            <li><a href="chi_siamo.html" data-translate ="chiSiamo">Chi Siamo</a></li>
+            <li><a href="news.html" data-translate ="news">News</a></li>
+            <li><a href="Contattaci.html" data-translate ="contatti">Contatti</a></li>
+            <li><a href="#" data-translate ="pacchetti">Pacchetti</a></li>
+            <li><a href="registrati.html" data-translate ="registrati">Registrati</a></li>
+            <li><a href="login.html" data-translate ="areaLogin">Area Login</a></li>
+        </ul>
+        <li class="flags">
+            <a href="#" data-lang="it"><img src="italia.png" alt="Italiano" class="flag-icon"></a>
+            <a href="#" data-lang="de"><img src="Germany.png" alt="German" class="flag-icon"></a>
+            <a href="#" data-lang="en"><img src="UK.png" alt="English" class="flag-icon"></a>
+            <a href="#" data-lang="fr"><img src="France.png" alt="French" class="flag-icon"></a>
+            <a href="#" data-lang="es"><img src="Spain.png" alt="Spanish" class="flag-icon"></a>
+        </li>
+    </nav>
+    
+    <div class="header-content">
+        <img src="Logo.png" alt="Quantum Bet World Logo" class="logo">
+        <h1 class="site-title">Quantum Bet World</h1>
+    </div>
+
+    <div class="container">
+        <div class="login-link">
+            <div class="logo">
+                <img src="Logo.png" alt="Quantum Bet World Logo">
+                <span class="text">Quantum Bet World</span>
+            </div>
+            <p class="side-big-heading">Già un membro?</p>
+            <p class="primary-bg-text">Per tenere traccia del tuo dashboard, accedi con le tue informazioni personali</p>
+            <a href="login.html" class="loginbtn">Accedi</a>
+        </div>
+        <form action="/registra-utente" method="POST" class="signup-form-container" onsubmit="return validateForm()">
+            <p class="big-heading">Crea Account</p>
+            <div class="social-media-platform">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="progress-bar">
+                <div class="stage">
+                    <p class="tool-tip">Informazioni personali</p>
+                    <p class="stageno stageno-1">1</p>
+                </div>
+                <div class="stage">
+                    <p class="tool-tip">Informazioni di contatto</p>
+                    <p class="stageno stageno-2">2</p>
+                </div>
+                <div class="stage">
+                    <p class="tool-tip">Invio finale</p>
+                    <p class="stageno stageno-3">3</p>
+                </div>
+            </div>
+            <div class="signup-form-content">
+                <div class="stage1-content">
+                    <div class="button-container">
+                        <div class="text-fields fname">
+                            <label for="fname"><i class="fas fa-user"></i></label>
+                            <input type="text" name="fname" id="fname" placeholder="Inserisci il tuo nome">
+                        </div>
+                        <div class="text-fields lname">
+                            <label for="lname"><i class="fas fa-user"></i></label>
+                            <input type="text" name="lname" id="lname" placeholder="Inserisci il tuo cognome">
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="text-fields dob">
+                            <input type="date" name="dob" id="dob">
+                        </div>
+                        <div class="gender-selection">
+                            <p class="field-heading">Genere: </p>
+                            <label for="male">
+                                <input type="radio" name="gender" id="male" value="male">Maschio
+                            </label>
+                            <label for="female">
+                                <input type="radio" name="gender" id="female" value="female">Femmina
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="text-fields nationality">
+                          <label for="nationality">Nazionalità:</label>
+                          <select id="nationality" name="nationality">
+                            <option value="">Seleziona la nazionalità</option>
+                            <option value="IT">Italia</option>
+                            <option value="FR">Francia</option>
+                            <option value="DE">Germania</option>
+                            <option value="ES">Spagna</option>
+                            <option value="UK">Regno Unito</option>
+                            <!-- Aggiungi altre opzioni qui -->
+                          </select>
+                        </div>
+                    </div>
+                    <div class="pagination-btns">
+                        <input type="button" value="Avanti" class="nextPage stagebtn1b" onclick="stage1to2()">
+                    </div>
+                </div>
+                <div class="stage2-content">
+                    <div class="button-container">
+                        <div class="text-fields phone">
+                            <label for="phone"><i class="fas fa-phone"></i></label>
+                            <input type="text" name="phone" id="phone" placeholder="Numero di telefono">
+                        </div>
+                        <div class="text-fields email">
+                            <label for="email"><i class="fas fa-envelope"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Inserisci il tuo indirizzo email">
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="text-fields password">
+                            <label for="password"><i class="fas fa-lock"></i></label>
+                            <input type="password" name="password" id="password" placeholder="Inserisci la password">
+                        </div>
+                        <div class="text-fields confirmpassword">
+                            <label for="confirmpassword"><i class="fas fa-lock"></i></label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Conferma la password">
+                        </div>
+                    </div>
+                    <div class="pagination-btns">
+                        <input type="button" value="Precedente" class="previousPage stagebtn2a" onclick="stage2to1()">
+                        <input type="button" value="Avanti" class="nextPage stagebtn2b" onclick="stage2to3()">
+                    </div>
+                </div>
+                <div class="stage3-content">
+                    <div class="tc-container">
+                        <label for="tc" class="tc">
+                            <input type="checkbox" name="tc" id="tc" required>
+                            Inviando i tuoi dettagli, accetti i <a href="#"> termini e condizioni. </a>
+                        </label>
+                    </div>
+                    <div class="pagination-btns">
+                        <input type="button" value="Precedente" class="previousPage stagebtn3a" onclick="stage3to2()">
+                        <input type="submit" value="Invia" class="nextPage stagebtn3b">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="disclaimer">
+                <p>Quantum Bet World promuove progetti matematici nel settore del betting. Non promuove esperienze ludopatiche o di atti compulsivi verso le scommesse. Quantum Bet World è contro la ludopatia. Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Informati sulle probabilità di vincita e sul regolamento del gioco sul sito www.adm.gov.it.</p>
+            </div>
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="QBW Logo">
+                    <p>La prima piattaforma mondiale dedicata al betting in ogni suo aspetto</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p>Plaza de Toros, Tenerife</p>
+                    <p>+34 0123456789</p>
+                    <p>QBW@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/tuapagina" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tuoprofilo" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/tuocanale" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2024 | Powered by Quantum Bet World</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    let signupContent1 = document.querySelector(".stage1-content"),
+        signupContent2 = document.querySelector(".stage2-content"),
+        signupContent3 = document.querySelector(".stage3-content");
+
+    function initializeForm() {
+        signupContent2.style.display = "none";
+        signupContent3.style.display = "none";
+    }
+
+    function stage1to2(){
+        signupContent1.style.display = "none";
+        signupContent2.style.display = "block";
+        document.querySelector(".stageno-1").innerText = "✔";
+        document.querySelector(".stageno-1").style.backgroundColor = "#52ec61";
+        document.querySelector(".stageno-1").style.color = "#fff";
+    }
+
+    function stage2to1(){
+        signupContent1.style.display = "block";
+        signupContent2.style.display = "none";
+    }
+
+    function stage2to3(){
+        signupContent2.style.display = "none";
+        signupContent3.style.display = "block";
+        document.querySelector(".stageno-2").innerText = "✔";
+        document.querySelector(".stageno-2").style.backgroundColor = "#52ec61";
+        document.querySelector(".stageno-2").style.color = "#fff";
+    }
+
+    function stage3to2(){
+        signupContent2.style.display = "block";
+        signupContent3.style.display = "none";
+    }
+
+    function validateForm() {
+        let password = document.getElementById("password").value;
+        let confirmpassword = document.getElementById("confirmpassword").value;
+        if (password !== confirmpassword) {
+            alert("Le password non corrispondono.");
+            return false;
+        }
+        return true;
+    }
+
+    document.addEventListener("DOMContentLoaded", initializeForm);
+</script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Bet World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Banner.jpg" alt="Banner" class="banner">
+    
+    <nav>
+        <ul>
+            <li><a href="QBWsite.html" data-translate ="home">Home Page</a></li>
+            <li><a href="chi_siamo.html" data-translate ="chiSiamo">Chi Siamo</a></li>
+            <li><a href="news.html" data-translate ="news">News</a></li>
+            <li><a href="Contattaci.html" data-translate ="contatti">Contatti</a></li>
+            <li><a href="#" data-translate ="pacchetti">Pacchetti</a></li>
+            <li><a href="registrati.html" data-translate ="registrati">Registrati</a></li>
+            <li><a href="login.html" data-translate ="areaLogin">Area Login</a></li>
+        </ul>
+        <li class="flags">
+            <a href="#" data-lang="it"><img src="italia.png" alt="Italiano" class="flag-icon"></a>
+            <a href="#" data-lang="de"><img src="Germany.png" alt="German" class="flag-icon"></a>
+            <a href="#" data-lang="en"><img src="UK.png" alt="English" class="flag-icon"></a>
+            <a href="#" data-lang="fr"><img src="France.png" alt="French" class="flag-icon"></a>
+            <a href="#" data-lang="es"><img src="Spain.png" alt="Spanish" class="flag-icon"></a>
+        </li>
+    </nav>
+    
+    <div class="header-content">
+        <img src="Logo.png" alt="Quantum Bet World Logo" class="logo">
+        <h1 class="site-title">Contatti</h1>
+    </div>
+
+    <main>
+        <div class="contatti-banner">
+            <img src="contatti.png" alt="Contatti Banner" class="full-width-image">
+        </div>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome e Cognome *</label>
+                <div class="input-group">
+                    <input type="text" id="nome" name="nome" required placeholder="Nome">
+                    <input type="text" id="cognome" name="cognome" required placeholder="Cognome">
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    <input type="email" id="conferma-email" name="conferma-email" required placeholder="Conferma email">
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefono">Contatto telefonico</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Numero di telefono">
+            </div>
+    
+            <div class="form-group">
+                <label for="messaggio">Messaggio *</label>
+                <textarea id="messaggio" name="messaggio" required placeholder="Scrivi il tuo messaggio qui"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="privacy" class="privacy-label">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    Accetto le condizioni sul trattamento dei dati personali
+                </label>
+            </div>
+    
+            <button type="submit" class="submit-btn">INVIA</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="disclaimer">
+                <p>Quantum Bet World promuove progetti matematici nel settore del betting. Non promuove esperienze ludopatiche o di atti compulsivi verso le scommesse. Quantum Bet World è contro la ludopatia. Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Informati sulle probabilità di vincita e sul regolamento del gioco sul sito www.adm.gov.it.</p>
+            </div>
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="QBW Logo">
+                    <p>La prima piattaforma mondiale dedicata al betting in ogni suo aspetto</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p>Plaza de Toros, Tenerife</p>
+                    <p>+34 0123456789</p>
+                    <p>QBW@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/tuapagina" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tuoprofilo" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/tuocanale" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2024 | Powered by Quantum Bet World</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

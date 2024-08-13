@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 93%;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.site-title {
+    font-size: 4em;
+    margin-left: 200px;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #111111;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.login-link {
+    background-color: #222222;
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+}
+
+.login-link .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.login-link .logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.login-link .text {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.login-link .side-big-heading {
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-link .primary-bg-text {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login-link a.loginbtn {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #FFD700;
+    border-radius: 24px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-link a.loginbtn:hover {
+    background-color: #FFA500;
+}
+
+.signup-form-container {
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+}
+
+.signup-form-container p.big-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.social-media-platform {
+    margin-bottom: 20px;
+}
+
+.social-media-platform a {
+    color: #FFD700;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media-platform a:hover {
+    color: #FFA500;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.progress-bar .stage {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.progress-bar .tool-tip {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.stageno {
+    margin: 6% 0;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #333333;
+    color: #FFD700;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: 4% 0;
+}
+
+
+.text-fields {
+    display: flex;
+    align-items: center;
+    border: 1px solid #444;
+    padding: 2%;
+    margin: 0 2%;
+    width: 46%;
+    border-radius: 4px;
+    color: #ccc;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    width: 200%;
+    margin-left: 4%;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.signup-form-content {
+    width: 100%;
+    padding: 0 3%;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+    background-color: #222;
+    color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.text-fields:after {
+    content: attr(data-label);
+    background-color: #111;
+    position: relative;
+    padding: 0 4%;
+    left: -210px;
+    width: auto;
+    color: #FFD700;
+    top: -33px;
+}
+
+.gender-selection {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    width: 100%;
+}
+
+.field-heading {
+    color: #FFD700;
+    width: 20%;
+}
+
+.gender-selection label {
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    width: 20%;
+}
+
+input[type="radio"] {
+    accent-color: #FFD700;
+    margin-right: 6%;
+}
+
+.pagination-btns {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+    padding: 0 4%;
+}
+
+.nextPage, .previousPage {
+    background-color: #FFD700;
+    color: #000;
+    width: 45%;
+    cursor: pointer;
+    padding: 2%;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.nextPage:hover, .previousPage:hover {
+    background-color: #FFA500;
+}
+
+.tc-container input {
+    width: 4%;
+    margin-left: 4%;
+    accent-color: #FFD700;
+}
+
+.tc a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+label.tc {
+    margin-left: 4%;
+}
+
+.login-form-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-contents .text-fields {
+    margin: 3% 2%;
+    width: 70%;
+    padding: 3%;
+}
+/* Aggiungi questi stili alla fine del file auth-style.css */
+
+.stage1-content, .stage2-content, .stage3-content {
+    width: 100%;
+}
+
+.stageno {
+    background-color: #333;
+    color: #FFD700;
+}
+
+.stageno-1.completed, .stageno-2.completed {
+    background-color: #52ec61;
+    color: #fff;
+}
+
+.gender-selection {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.gender-selection label {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.gender-selection input[type="radio"] {
+    margin-right: 5px;
+}
+
+.tc-container {
+    margin-top: 20px;
+}
+
+.tc-container label {
+    display: flex;
+    align-items: center;
+}
+
+.tc-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.pagination-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination-btns input {
+    width: 48%;
+}
+nav {
+    position: relative;  /* Aggiunto per posizionare le bandiere */
+}
+
+.flags {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-width: 70px; /* Ridotto da 100px a 50px */
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    margin: 0;
+}
+.text-fields.nationality {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .text-fields.nationality label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text-fields.nationality select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px auto;
+  }
+  
+  .text-fields.nationality select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+  }
+  
+  /* Stile per le opzioni del menu a tendina */
+  .text-fields.nationality select option {
+    padding: 10px;
+  }
+/* Specifiche classi per i campi del form */
+.text-fields.fname:after { content: 'First name'; }
+.text-fields.lname:after { content: 'Last name'; }
+.text-fields.dob:after { content: 'Date of birth'; }
+.text-fields.phone:after { content: 'Phone number'; }
+.text-fields.email:after { content: 'Email Id'; }
+.text-fields.password:after { content: 'Enter Password'; }
+.text-fields.confirmpassword:after { content: 'Confirm Password'; }
+
+.login-form-contents .text-fields.email:after,
+.login-form-contents .text-fields.password:after {
+    left: -323px;
+}
